@@ -1,12 +1,12 @@
 The codebook describes the variables in the final tidy data.
 
--Original data
+-Original data:
       -The origianl data was obtained from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip               
       -The data is described as "Human Activity Recognition database built from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors."
       -The experiments involved a group of 30 volunteers. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz were captured.
       -For more information, you can check this website: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
 
--Variables of the original data
+-Variables of the original data:
       -A description of the variables in the original dataset can be found in the "features_info.txt" file, as quoted below:
       "The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
@@ -63,11 +63,11 @@ tBodyAccJerkMean
 tBodyGyroMean
 tBodyGyroJerkMean"
 
--Transformation performed to clean up the data
+-Transformation performed to clean up the data:
       -Among the 561 feature vectors, the ones of mean and standard deviation measurements are of interest, thus only 66 feature vectors are extracted. Together with the activity and subject id vectors, there are 68 vectors.
       -To create a tidy data set, for each activity and each subject, the average of each variable is calculated. Thus there are 180 records in the tidy dataset (6 activities *30 subjects).
     
--Final variables in the tidy dataset
+-Final variables in the tidy dataset:
     "activity" 
     "subject.id" 
     "time.body.acceleration.mean.X.average" 
